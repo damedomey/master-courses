@@ -51,7 +51,8 @@ public:
 
     int pop(){
         if (last == 0){
-            printf("\nERR: This stack is empty\n");
+            printf("\nERR: This stack is empty. 0's returned.\n");
+            return 0;
         }
         return data->get(last--);
     }
